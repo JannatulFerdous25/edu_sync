@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap");
+
+@font-face {
+  font-family: "SFpro";
+  src: url(../fonts/SF-Pro-Display-Regular.ttf) format("truetype"),
+    url(../fonts/SF-Pro-Display-Regular.woff) format("woff"),
+    url(../fonts/SF-Pro-Display-Light.ttf) format("truetype"),
+    url(../fonts/SF-Pro-Display-Light.woff) format("woff");
+}
+$primary-color: #14B642;
+
+$secondary-color: #2580ec;
+$white-color: #fff;
+$black-color:#000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(243deg, #EDFFFF 0.33%, #FFF 99.79%), #FFF;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: normal;
+  margin-bottom: 2.5rem;
+}
+h3 {
+  font-size: 1.8rem;
+
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+h5{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+small{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+span {
+  color: $primary-color;
+  font-size: inherit;
+}
+.container {
+width: 124rem;
+margin: 0 auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+.button {
+    padding: 0.2rem 1.3rem;
+    background: transparent;
+    border: 1px solid $primary-color;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .button span img{
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
+  }
+
+
+.owl-theme .owl-dots {
+  margin-top: 5rem !important;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: $primary-color !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: $white-color !important;
+  border: 1px solid $primary-color !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

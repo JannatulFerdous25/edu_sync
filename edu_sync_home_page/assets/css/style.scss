@@ -1,0 +1,79 @@
+/*-----Typography-----*/
+@import "typography";
+
+/*-----Header part-----*/
+
+header {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 11rem;
+    width: 100%;
+    height: 7rem;
+    color: $black-color;
+    background-color: $white-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1200;
+    overflow: hidden;
+    .logo {
+      width: 78px;
+      height: 78px;
+    }
+
+    ul {
+      display: flex;
+      transition: 0.7s all;
+      li {
+        margin: 0 1rem;
+        text-transform: capitalize;
+      }
+      a {
+        font-size: 1.4rem;
+        color: #000;
+      }
+    }
+  }
+}
+/*-----carousel section-----*/
+.container{
+  .home{
+    width: 124rem;
+  padding: 56px 100px 40px 100px;
+.item{
+  img{
+border-radius: 1.2rem;
+    width: 124rem;
+    height: 45.6rem;
+    background: lightgray 50% / cover no-repeat;
+
+
+  }
+}
+  }
+}
+/* .hero-right{
+           
+  width: 37%;
+ 
+  .notice-box-wrap{
+      .notice-box{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          padding: 1rem 2rem;
+          border-radius: 1rem;
+          margin-bottom: 1rem;
+      }
+      .btn{
+          width: 7rem;
+          float: right;
+        
+      }
+  }
+} */
