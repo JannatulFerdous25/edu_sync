@@ -40,40 +40,141 @@ header {
   }
 }
 /*-----carousel section-----*/
-.container{
-  .home{
-    width: 124rem;
-  padding: 56px 100px 40px 100px;
-.item{
-  img{
-border-radius: 1.2rem;
-    width: 124rem;
-    height: 45.6rem;
-    background: lightgray 50% / cover no-repeat;
-
-
+.container {
+  .home {
+    width: 100%;
+    padding: 56px 100px 40px 100px;
+    .item {
+      width: 124rem;
+      height: 50rem;
+      border-radius: 1.2rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1.2rem;
+        background: lightgray 50% / cover no-repeat;
+      }
+    }
   }
 }
+/*-----About school section-----*/
+.about-school {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  .left-content {
+    p {
+      width: 627px;
+    }
+  }
+  .right-content {
+    width: 507px;
+    height: 298px;
+    border-radius: 1.2rem;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+      ),
+      lightgray 50% / cover no-repeat;
   }
 }
-/* .hero-right{
-           
-  width: 37%;
- 
-  .notice-box-wrap{
-      .notice-box{
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          padding: 1rem 2rem;
-          border-radius: 1rem;
+
+/*-----notice board section-----*/
+.notice-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  .left-content {
+    flex-basis: 48%;
+    .glance {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      .box {
+        width: 180px;
+        height: 196px;
+        border-radius: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #d7ffeb;
+        img {
+          width: 52px;
+          height: 52px;
           margin-bottom: 1rem;
+        }
+        h2 {
+          margin-bottom: 1rem;
+        }
+        p {
+          color: #5d5d5d;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 26px;
+        }
+        &:nth-child(2) {
+          background: #fff9eb;
+        }
+        &:nth-child(3) {
+          background: #daebff;
+        }
+        &:nth-child(4) {
+          background: #f5f3ff;
+        }
+        &:nth-child(5) {
+          background: #fff2f0;
+        }
+        &:nth-child(6) {
+          background: #fdf2f8;
+        }
       }
-      .btn{
-          width: 7rem;
-          float: right;
-        
-      }
+    }
   }
-} */
+  .right-content {
+    flex-basis: 48%;
+    .notice-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      .button {
+        padding: 8px 20px;
+        font-size: 16px;
+        margin-top: -3rem;
+      }
+    }
+    .notice-board {
+      padding: 1.6rem;
+      background-color: $white-color;
+      border-radius: 8px;
+      box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.08);
+      .notice {
+        padding: 1rem 0;
+        border-bottom: 1px solid#E7E7E7;
+        p {
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 24px;
+        }
+        span {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
